@@ -61,3 +61,4 @@ github "xquartz",     "1.1.1"
 # https://github.com/boxen.
 
 github "dropbox",     "1.2.0"
+github "iterm2"
