@@ -67,3 +67,5 @@ github "alfred",      "1.2.0"
 github "osx",         "2.7.0"
 github "zsh",         "1.0.0"
 github "ohmyzsh",     "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
+
+github "chrome",      "1.1.2"
