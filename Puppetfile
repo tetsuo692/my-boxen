@@ -62,3 +62,4 @@ github "xquartz",     "1.1.1"
 
 github "dropbox",     "1.2.0"
 github "iterm2"
+github "onepassword"

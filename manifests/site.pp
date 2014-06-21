@@ -91,6 +91,9 @@ node default {
 
   #DropBox
   include dropbox
+
   include iterm2::stable
   include iterm2::colors::solarized_dark
+
+  include onepassword
 }
