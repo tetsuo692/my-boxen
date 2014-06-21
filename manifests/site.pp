@@ -96,4 +96,5 @@ node default {
   include iterm2::colors::solarized_dark
 
   include onepassword
+  include alfred
 }
