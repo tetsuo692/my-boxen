@@ -14,4 +14,20 @@ class people::tetsuo692 {
     include zsh
     include ohmyzsh
     include chrome
+
+    $home = "/Users/${::luser}"
+    $projects = "${home}/Projects"
+
+    file { $projects:
+      ensure => directory,
+    }
+
+    $dotfiles = "${projects}/dotfiles"
+
+    repository { $dotfiles:
+      source => 'tetsuo692/dotfiles',
+      require => File[$projects],
+    }
+
+    include osx::disable_app_quarantine
 }
