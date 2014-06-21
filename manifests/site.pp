@@ -98,6 +98,8 @@ node default {
   include onepassword
   include alfred
 
+  include osx
+
   include zsh
   include ohmyzsh
 }
