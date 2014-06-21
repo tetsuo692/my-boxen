@@ -97,4 +97,5 @@ node default {
 
   include onepassword
   include alfred
+  include ohmyzsh
 }
