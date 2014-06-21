@@ -15,6 +15,8 @@ class people::tetsuo692 {
     include ohmyzsh
     include chrome
 
+    include virtualbox
+    
     $home = "/Users/${::luser}"
     $projects = "${home}/Projects"
 
@@ -30,4 +32,5 @@ class people::tetsuo692 {
     }
 
     include osx::disable_app_quarantine
+
 }
