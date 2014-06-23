@@ -3,20 +3,24 @@ class people::tetsuo692 {
     #DropBox
     include dropbox
 
+    #iterm2
     include iterm2::stable
     include iterm2::colors::solarized_dark
 
+    #1passwd
     include onepassword
+
+    #alfred
     include alfred
 
-    #include osx
-
+    #Zsh
     include zsh
     include ohmyzsh
+
     include chrome
 
     include virtualbox
-    
+
     $home = "/Users/${::luser}"
     $projects = "${home}/Projects"
 
