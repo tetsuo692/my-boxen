@@ -23,6 +23,7 @@ class people::tetsuo692 {
 
     $home = "/Users/${::luser}"
     $projects = "${home}/Projects"
+    $vimpath = "${home}/.vim"
 
     file { $projects:
       ensure => directory,
@@ -35,6 +36,29 @@ class people::tetsuo692 {
       require => File[$projects],
     }
 
+    file {$vimpath:
+      ensure => "link",
+      target => "${dotfiles}/vim/",
+      require => Repository[$dotfiles],
+    }
+
+    file { "${home}/.zshrc":
+      ensure => "link",
+      target => "${dotfiles}/zshrc",
+      require => Repository[$dotfiles],
+    }
+
+    file { "${$home}/.vimrc":
+      ensure => "link",
+      target => "${home}/.vim/vimrc",
+      require => Repository[$dotfiles],
+    }
+
+    exec { "vundle":
+      provider => shell,
+      command => "vim +PluginInstall +qall",
+      require => Repository[$dotfiles],
+    }
     include osx::disable_app_quarantine
 
 }
