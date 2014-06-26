@@ -10,7 +10,7 @@ class people::tetsuo692 {
     #1passwd
     include onepassword
 
-    #alfred
+
     include alfred
 
     #Zsh
@@ -21,6 +21,11 @@ class people::tetsuo692 {
 
     include virtualbox
 
+    include appcleaner
+
+    include onyx
+    include git::config
+    include macvim
     $home = "/Users/${::luser}"
     $projects = "${home}/Projects"
     $vimpath = "${home}/.vim"
@@ -47,7 +52,11 @@ class people::tetsuo692 {
       target => "${dotfiles}/zshrc",
       require => Repository[$dotfiles],
     }
-
+    file { "${home}/.gitignore":
+      ensure => "link",
+      target => "${dotfiles}/gitignore",
+      require => Repository[$dotfiles],
+    }
     file { "${$home}/.vimrc":
       ensure => "link",
       target => "${home}/.vim/vimrc",
@@ -60,5 +69,4 @@ class people::tetsuo692 {
       require => Repository[$dotfiles],
     }
     include osx::disable_app_quarantine
-
 }
