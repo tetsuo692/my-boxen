@@ -26,20 +26,16 @@ class people::tetsuo692 {
     include onyx
     include git::config
     include macvim
-    $home = "/Users/${::luser}"
-    $projects = "${home}/Projects"
-    $vimpath = "${home}/.vim"
 
-    file { $projects:
-      ensure => directory,
-    }
+    include projects::dotfiles
+    include projects::share_link
+
+    $home = "/Users/${::luser}"
+    $projects = "${boxen::config::srcdir}"
+    $vimpath = "${home}/.vim"
 
     $dotfiles = "${projects}/dotfiles"
 
-    repository { $dotfiles:
-      source => 'tetsuo692/dotfiles',
-      require => File[$projects],
-    }
 
     file {$vimpath:
       ensure => "link",
