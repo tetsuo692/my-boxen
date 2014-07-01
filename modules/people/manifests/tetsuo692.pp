@@ -28,7 +28,7 @@ class people::tetsuo692 {
     include macvim
 
     include projects::dotfiles
-    include projects::share_link
+    include projects::echotek
 
     $home = "/Users/${::luser}"
     $projects = "${boxen::config::srcdir}"
