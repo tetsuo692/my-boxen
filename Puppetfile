@@ -61,7 +61,7 @@ github "xquartz",     "1.1.1"
 # https://github.com/boxen.
 
 github "dropbox",     "1.2.0"
-github "iterm2"
+github "iterm2",      "1.1.2"
 github "onepassword"
 github "alfred",      "1.2.0"
 github "osx",         "2.7.0"
