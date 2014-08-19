@@ -27,6 +27,8 @@ class people::tetsuo692 {
     include git::config
     include macvim
 
+    include wireshark
+
     include projects::dotfiles
     include projects::echotek
 
