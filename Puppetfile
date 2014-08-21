@@ -56,6 +56,7 @@ github "ruby",        "8.0.4"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.1.1"
+github "boxen",       "2.6.1"
 #github "wireshark",   "1.0.4", :repo => "davidbanham/puppet-wireshark"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
