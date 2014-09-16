@@ -58,12 +58,16 @@ class people::tetsuo692 {
       target => "${dotfiles}/gitignore",
       require => Repository[$dotfiles],
     }
-    file { "${$home}/.vimrc":
+    file { "${home}/.vimrc":
       ensure => "link",
       target => "${home}/.vim/vimrc",
       require => Repository[$dotfiles],
     }
-
+    file { "${home}/.gitconfig":
+      ensure => "link",
+      target => "${dotfiles}/gitconfig",
+      require => Repository[$dotfiles],
+    }
     exec { "vundle":
       provider => shell,
       command => "vim +PluginInstall +qall",
