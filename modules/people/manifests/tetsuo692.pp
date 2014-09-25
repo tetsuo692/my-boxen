@@ -33,7 +33,6 @@ class people::tetsuo692 {
 
     include projects::dotfiles
     include projects::echotek
-    
 
     $home = "/Users/${::luser}"
     $projects = "${boxen::config::srcdir}"
@@ -66,6 +65,11 @@ class people::tetsuo692 {
     file { "${home}/.gitconfig":
       ensure => "link",
       target => "${dotfiles}/gitconfig",
+      require => Repository[$dotfiles],
+    }
+    file { "${home}/.gemrc":
+      ensure => "link",
+      target => "${dotfiles}/gemrc",
       require => Repository[$dotfiles],
     }
     exec { "vundle":
