@@ -68,11 +68,11 @@ class people::tetsuo692 {
       target => "${dotfiles}/gitconfig",
       require => Repository[$dotfiles],
     }
-    file { "${home}/.gemrc":
-      ensure => "link",
-      target => "${dotfiles}/gemrc",
-      require => Repository[$dotfiles],
-    }
+    #file { "${home}/.gemrc":
+    #  ensure => "link",
+    #  target => "${dotfiles}/gemrc",
+    #  require => Repository[$dotfiles],
+    #}
     exec { "vundle":
       provider => shell,
       command => "vim +PluginInstall +qall",
