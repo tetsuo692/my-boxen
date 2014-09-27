@@ -78,3 +78,5 @@ github "appcleaner",  "1.0.0"
 github "onyx",        "1.2.0"
 
 github "macvim",      "1.0.0"
+
+github "tmux",        "1.0.2"
