@@ -28,6 +28,7 @@ class people::tetsuo692 {
     include macvim
 
     include mongodb
+    include tmux
 
 #    include wireshark
 
