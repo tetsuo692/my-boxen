@@ -34,6 +34,7 @@ class people::tetsuo692 {
 
     include projects::dotfiles
     include projects::echotek
+    include projects::cream
 
     $home = "/Users/${::luser}"
     $projects = "${boxen::config::srcdir}"
