@@ -1,5 +1,5 @@
 class projects::cream {
-  boxen::project{
+  boxen::project{'cream':
     ruby => '2.0.0',
     dotenv => true,
     nginx => true,
