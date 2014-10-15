@@ -69,6 +69,12 @@ class people::tetsuo692 {
       target => "${dotfiles}/gitconfig",
       require => Repository[$dotfiles],
     }
+
+    file { "${home/.tmux.conf}":
+      ensure  => "link",
+      target  => "${dotfiles}/tmux.conf",
+      require => Repository[$dotfiles],
+    }
     #file { "${home}/.gemrc":
     #  ensure => "link",
     #  target => "${dotfiles}/gemrc",
