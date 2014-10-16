@@ -36,9 +36,10 @@ class people::tetsuo692 {
     include projects::echotek
     include projects::cream
 
-    packagage { 'wget':
+    package { 'wget':
       ensure => present,
     }
+
     $home = "/Users/${::luser}"
     $projects = "${boxen::config::srcdir}"
     $vimpath = "${home}/.vim"
@@ -73,7 +74,7 @@ class people::tetsuo692 {
       require => Repository[$dotfiles],
     }
 
-    file { "${home/.tmux.conf}":
+    file { "${home}/.tmux.conf":
       ensure  => "link",
       target  => "${dotfiles}/tmux.conf",
       require => Repository[$dotfiles],
