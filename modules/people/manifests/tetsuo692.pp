@@ -36,6 +36,9 @@ class people::tetsuo692 {
     include projects::echotek
     include projects::cream
 
+    packagage { 'wget':
+      ensure => present,
+    }
     $home = "/Users/${::luser}"
     $projects = "${boxen::config::srcdir}"
     $vimpath = "${home}/.vim"
