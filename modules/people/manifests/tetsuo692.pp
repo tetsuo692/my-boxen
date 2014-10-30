@@ -24,7 +24,8 @@ class people::tetsuo692 {
     include appcleaner
 
     include onyx
-    include git::config
+    include git
+    /* include git::config */
     include macvim
 
     include mongodb
