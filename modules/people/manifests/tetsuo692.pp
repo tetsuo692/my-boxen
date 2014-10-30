@@ -3,6 +3,8 @@ class people::tetsuo692 {
     #DropBox
     include dropbox
 
+    include xquartz
+
     #iterm2
     include iterm2::stable
     include iterm2::colors::solarized_dark
