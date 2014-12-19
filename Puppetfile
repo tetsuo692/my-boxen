@@ -56,7 +56,7 @@ github "ruby",        "8.1.4"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
-github "mongodb",       "2.6.1"
+github "mongodb",       "2.6.5"
 
 
 
