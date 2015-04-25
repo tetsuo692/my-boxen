@@ -61,3 +61,4 @@ github "mongodb",     "1.3.3"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+github "dropbox",     "2.10.41"
