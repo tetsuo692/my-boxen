@@ -61,9 +61,7 @@ github "mongodb",     "1.3.3"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-github "dropbox",     "1.2.0"
-github "dropbox",     "1.2.0"
-github "iterm2",      "1.1.2"
+github "dropbox"
 github "onepassword"
 github "alfred",      "1.2.0"
 github "osx",         "2.8.0"
