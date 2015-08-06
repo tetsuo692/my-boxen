@@ -41,13 +41,8 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 github "brewcask",    "0.0.6"
 github "dnsmasq",     "2.0.1"
 github "foreman",     "1.2.0"
-<<<<<<< HEAD
-github "gcc",         "2.2.0"
-github "git",         "2.7.8"
-=======
 github "gcc",         "2.2.1"
 github "git",         "2.7.9"
->>>>>>> upstream/master
 github "go",          "2.1.0"
 github "homebrew",    "1.12.0"
 github "hub",         "1.4.1"
@@ -66,7 +61,7 @@ github "mongodb",     "1.3.3"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-<<<<<<< HEAD
+
 github "dropbox"
 github "onepassword"
 github "alfred",      "1.2.0"
@@ -85,10 +80,10 @@ github "onyx",        "1.2.0"
 github "macvim",      "1.0.0"
 
 github "tmux",        "1.0.2"
-=======
+
 # github "elasticsearch", "2.7.2"
 # github "mysql",         "2.0.1"
 # github "postgresql",  "3.0.3"
 # github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
->>>>>>> upstream/master
+
