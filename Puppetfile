@@ -81,6 +81,7 @@ github "macvim",      "1.0.0"
 
 github "tmux",        "1.0.2"
 
+github "iterm2",	  "1.2.5"
 # github "elasticsearch", "2.7.2"
 # github "mysql",         "2.0.1"
 # github "postgresql",  "3.0.3"
