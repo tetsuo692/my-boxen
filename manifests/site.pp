@@ -64,9 +64,9 @@ node default {
   }
 
   # node versions
-  nodejs::version { 'v0.6': }
-  nodejs::version { 'v0.8': }
-  nodejs::version { 'v0.10': }
+  nodejs::version { '0.6': }
+  nodejs::version { '0.8': }
+  nodejs::version { '0.10': }
 
   nodejs::module { 'coffee-script':
     node_version => 'v0.10'
